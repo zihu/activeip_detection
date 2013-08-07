@@ -1,0 +1,38 @@
+#fsdb -F t prefix designation date_reported reporter comment
+128.125.0.0/16	Direct ARIN Allocation - USC	-	-
+68.181.0.0/16	Direct ARIN Allocation - USC	-	-
+68.181.0.0/19	 Secured Wireless	2010-06-10	mdougher
+68.181.152.0/22	School of Cinematic Arts, SCA building	2008-11-24	yamaguch
+68.181.158.128/25	College of Letter, Arts & Sciences - Advancement, CGC building	2008-11-24	yamaguch
+68.181.157.0/25	Keck School of Medicine, Maternal Child and Adolescent Program, HRA building	2008-11-24	yamaguch
+204.57.0.0/21	Direct ARIN Allocation - SIPI	-	-
+192.5.10.0/24	Direct ARIN Allocation - USC @Clemson	-	-
+2605:3C00::/32	Direct ARIN Allocation - USC IPv6	-	-
+198.147.120.0/21	SWiP Allocation from Los Nettos - NUP Wireless	2010-07-21	yamaguch
+204.140.128.0/19	SWiP Allocation from Los Nettos - NUP Wireless	2010-07-21	yamaguch
+204.140.192.0/21	SWiP Allocation from Los Nettos - HSC Wireless	2010-07-21	yamaguch
+206.117.88.0/21	SWiP Allocation from Los Nettos - NUP Wireless	2010-07-21	yamaguch
+206.117.99.0/24	SWiP Allocation from Los Nettos - Guest Wired	2011-04-21	yamaguch
+206.117.100.0/23	SWiP Allocation from Los Nettos - Guest Wired	2011-04-21	yamaguch
+206.117.102.0/23	SWiP Allocation from Los Nettos - OCL Wireless	2010-07-21	yamaguch
+207.151.0.0/20	SWiP Allocation from Los Nettos	2012-07-10	yamaguch
+207.151.24.0/22	SWiP Allocation from Los Nettos	2012-07-10	yamaguch
+207.151.32.0/22	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.52.0/22	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.56.0/21	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.64.0/22	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.72.0/21	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.88.0/21	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.120.0/21	SWiP Allocation from Los Nettos - Wireless	2011-04-21	yamaguch
+207.151.128.0/21	SWiP Allocation from Los Nettos - Wireless	2011-04-21	yamaguch
+207.151.140.0/22	SWiP Allocation from Los Nettos - Wireless	2012-07-10	yamaguch
+207.151.224.0/19	SWiP Allocation from Los Nettos - UPC Wireless	2010-07-21	yamaguch
+2001:1878:0100::/40	SWiP Allocation from Los Nettos - IPv6 old	2011-04-21	yamaguch
+50.59.168.0/22	Allocation from TWTelecom - Arizona	2012-07-10	yamaguch
+209.234.167.60/30	Allocation from TWTelecom - Arizona	2012-07-10	yamaguch
+2001:468:0ea3::/48	Allocation from CENIC	2011-04-21	yamaguch
+128.9.0.0/16	ISI	-	-	Not seen by landerI2
+65.114.168.0/24	ISI Arlington	2011-04-21	yamaguch	Not seen by landerI2
+65.114.169.0/24	ISI Arlington	2011-04-21	yamaguch	Not seen by landerI2
+63.247.0.0/19	Univeristy Hospital/Norris Cancer Hospital	2011-04-21	yamaguch
+#   | dbroweval  -b { sub fix { $_[0] =~ s/ +/ /g; $_[0] =~ s/ $//; return $_[0]; }; }  { fix(_prefix); fix(_designation); }
