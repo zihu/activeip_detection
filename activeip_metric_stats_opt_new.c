@@ -592,6 +592,7 @@ int which_usc_block(unsigned long ip)
     	//otherwise, non USC;
     	return 0;	
     }
+    return 0;
 }
 
 

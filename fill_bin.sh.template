@@ -1,8 +1,7 @@
 #!/bin/bash 
 # by Zi: zihu@usc.edu
-# this script does two things:
-# 1. split/move traces to each 15 minutes bin. if a trace doesn't cross bins, just move it to the right bin, otherwise, we have to split the trace and put different parts to different bins
-# 2. process traces, if a bin get all the necessary traces, process it.
+# this script does one thing
+# split/move traces to each 15 minutes bin. if a trace doesn't cross bins, just move it to the right bin, otherwise, we have to split the trace and put different parts to different bins
 
 # bin time range: 15 minutes
 INTERVAL=900 

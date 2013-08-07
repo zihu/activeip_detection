@@ -16,7 +16,8 @@ Before you run the code, I highly suggest you to check that the working director
 
 2. run:
 	this code is supposed to be run on HPCC, basically you need to create two cron jobs to run the code. There is already an cron job file in this directory, you only need:
-	type "cat activeip.crontab | crontab"  to add the cron jobs.
+	type "cat activeip.crontab | crontab"  to add the cron jobs. ATTENTION: this will erase your old cron jobs;
+
 	One thing to mention is that these cron jobs are set to work on host anonimized data, if your need to analyze the raw data, you need to modify this line:
 	*/4 * * * * $DISPATCHER -w 30 -j 160 -n 1 $ACTIVEIPSTAT/fill_bin.sh host 
 	to something like:
