@@ -1,0 +1,4 @@
+DISPATCHER=/home/samfs-02/LANDER/plander/scripts/user_dispatcher.sh
+ACTIVEIPSTAT=WORKING_DIR
+*/4 * * * * $DISPATCHER -w 30 -j 160 -n 1 $ACTIVEIPSTAT/fill_bin.sh host
+*/10 * * * * $DISPATCHER -j 60 -n 2 -i $ACTIVEIPSTAT/vinput_dir $ACTIVEIPSTAT/activeip_stats_bin.sh
